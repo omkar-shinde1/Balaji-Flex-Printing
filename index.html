@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Balaji Flex Printing & Design | Pune</title>
+
+  <meta name="description" content="Balaji Flex Printing & Design provides flex banner printing, graphic design, on-site banner pasting & branding services in Pune.">
+  <meta name="keywords" content="Flex Printing Pune, Banner Printing, Graphic Design Studio, Onsite Banner Pasting">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Tailwind Config -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#f72585',
+            secondary: '#4895ef',
+            accent: '#560bad',
+            dark: '#1f2937'
+          },
+          fontFamily: {
+            poppins: ['Poppins', 'sans-serif']
+          },
+          animation: {
+            blink: 'blink 1.5s infinite'
+          },
+          keyframes: {
+            blink: {
+              '0%,100%': { opacity: '1' },
+              '50%': { opacity: '.4' }
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    .reveal { opacity:0; transform:translateY(40px); transition:.8s }
+    .reveal.active { opacity:1; transform:none }
+    .nav-link.active { color:#f72585; border-bottom:2px solid #f72585 }
+
+@keyframes blinkBlue {
+  0%, 100% {
+    color: #4895ef; /* Blue */
+  }
+  50% {
+    color: #1f2937; /* Dark (off state) */
+  }
+}
+
+.blink-blue {
+  animation: blinkBlue 1.2s ease-in-out infinite;
+}
+
+  </style>
+
+</head>
+
+<body class="font-poppins bg-[#f9fafb] text-dark scroll-smooth">
+
+<!-- ================= NAVBAR ================= -->
+<header class="fixed top-0 w-full bg-white/90 backdrop-blur shadow z-50">
+  <div class="max-w-7xl mx-auto px-4 flex justify-between items-center h-16">
+    <img src="assets/images/logo/balaj_logo.jpg" class="h-10">
+
+    <nav class="hidden md:flex gap-8 font-medium">
+      <a href="#home" class="nav-link">Home</a>
+      <a href="#services" class="nav-link">Services</a>
+      <a href="#pricing" class="nav-link">Pricing</a>
+      <a href="#work" class="nav-link">Work</a>
+      <a href="#reviews" class="nav-link">Reviews</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </nav>
+
+   <div class="hidden md:block font-semibold blink-blue">
+  📞 9503438815
+</div>
+
+
+
+    <button id="menuBtn" class="md:hidden text-3xl">☰</button>
+  </div>
+</header>
+
+<!-- ================= HERO ================= -->
+<section id="home" class="pt-18">
+  <div class="bg-gradient-to-br from-[#7209b7] via-[#4361ee] to-[#4cc9f0]">
+    <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-12 items-center py-28 text-white reveal">
+      <div>
+        <h1 class="text-4xl md:text-5xl font-bold mb-5">
+          Balaji Flex Printing & Design
+        </h1>
+        <p class="text-lg mb-8">
+          Flex Printing, Creative Graphic Design & Professional On-Site Banner Installation in Pune.
+        </p>
+        <div class="flex gap-4">
+          <a href="https://wa.me/919503438815"
+             class="bg-white text-black px-8 py-3 rounded-xl font-semibold hover:scale-105 transition">
+            Get Quote on WhatsApp
+          </a>
+          <a href="#pricing"
+             class="bg-white text-black px-8 py-3 rounded-xl hover:bg-gray-100 transition">
+            View Pricing
+          </a>
+        </div>
+      </div>
+
+      <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758"
+           class="rounded-2xl shadow-2xl">
+    </div>
+  </div>
+</section>
+
+<!-- ================= SERVICES ================= -->
+<section id="services" class="py-24 reveal">
+  <div class="max-w-7xl mx-auto px-4 text-center">
+    <h2 class="text-3xl font-bold text-accent mb-14">Our Services</h2>
+
+    <div class="grid md:grid-cols-3 gap-12">
+      <div class="bg-white p-10 rounded-xl shadow hover:-translate-y-2 transition">
+        <h3 class="font-semibold text-xl mb-3">Flex & Banner Printing</h3>
+        <p class="text-gray-600">All sizes of flex banners, vinyl printing & outdoor advertising boards.</p>
+      </div>
+
+      <div class="bg-white p-10 rounded-xl shadow hover:-translate-y-2 transition">
+        <h3 class="font-semibold text-xl mb-3">Graphic Design Services</h3>
+        <p class="text-gray-600">Social media creatives, birthday banners, visiting cards & branding.</p>
+      </div>
+
+      <div class="bg-white p-10 rounded-xl shadow hover:-translate-y-2 transition">
+        <h3 class="font-semibold text-xl mb-3">On-Site Banner Pasting</h3>
+        <p class="text-gray-600">Professional banner installation at shops, roadsides & events.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PRICING ================= -->
+<section id="pricing" class="py-24 bg-white reveal">
+  <div class="max-w-7xl mx-auto px-4 text-center">
+    <h2 class="text-3xl font-bold text-accent mb-16">How Our Pricing Works</h2>
+
+    <div class="grid md:grid-cols-5 gap-8">
+
+      <div class="bg-[#f9fafb] p-8 rounded-xl border hover:border-primary hover:-translate-y-2 transition">
+        <img src="https://images.unsplash.com/photo-1545239351-1141bd82e8a6" class="rounded mb-4">
+        <h4 class="font-semibold mb-2 text-primary">Size (Sq. Ft.)</h4>
+        <p class="text-sm text-gray-600">Larger banner sizes require more material and printing cost.</p>
+      </div>
+
+      <div class="bg-[#f9fafb] p-8 rounded-xl border hover:border-primary hover:-translate-y-2 transition">
+        <img src="https://images.unsplash.com/photo-1524758631624-e2822e304c36" class="rounded mb-4">
+        <h4 class="font-semibold mb-2 text-primary">Material Type</h4>
+        <p class="text-sm text-gray-600">Flex, vinyl or premium materials impact durability & price.</p>
+      </div>
+
+      <div class="bg-[#f9fafb] p-8 rounded-xl border hover:border-primary hover:-translate-y-2 transition">
+        <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf" class="rounded mb-4">
+        <h4 class="font-semibold mb-2 text-primary">Design Complexity</h4>
+        <p class="text-sm text-gray-600">Simple designs cost less; custom graphics need more time.</p>
+      </div>
+
+      <div class="bg-[#f9fafb] p-8 rounded-xl border hover:border-primary hover:-translate-y-2 transition">
+        <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e" class="rounded mb-4">
+        <h4 class="font-semibold mb-2 text-primary">Quantity</h4>
+        <p class="text-sm text-gray-600">Bulk orders reduce per-unit cost significantly.</p>
+      </div>
+
+      <div class="bg-[#f9fafb] p-8 rounded-xl border hover:border-primary hover:-translate-y-2 transition">
+        <img src="https://images.unsplash.com/photo-1596075780750-81249df16d19" class="rounded mb-4">
+        <h4 class="font-semibold mb-2 text-primary">Installation</h4>
+        <p class="text-sm text-gray-600">On-site banner pasting depends on height & location.</p>
+      </div>
+
+    </div>
+
+    <a href="https://wa.me/919503438815"
+       class="inline-block mt-16 bg-secondary text-white px-12 py-3 rounded-xl hover:scale-105 transition">
+      Get Exact Price on WhatsApp
+    </a>
+  </div>
+</section>
+
+<!-- ================= WORK SECTION ================= -->
+<section id="work" class="py-24 bg-[#f9fafb] reveal">
+  <div class="max-w-7xl mx-auto px-4 text-center">
+    <h2 class="text-3xl font-bold text-accent mb-12">Our Recent Work</h2>
+
+    <div class="relative overflow-hidden">
+      <div id="workSlider" class="flex gap-8 transition-transform duration-700">
+        <!-- 12 images -->
+        <img class="w-80 rounded-xl shadow" src="https://images.unsplash.com/photo-1529333166437-7750a6dd5a70">
+        <img class="w-80 rounded-xl shadow" src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf">
+        <img class="w-80 rounded-xl shadow" src="https://images.unsplash.com/photo-1557683316-973673baf926">
+        <img class="w-80 rounded-xl shadow" src="https://images.unsplash.com/photo-1492724441997-5dc865305da7">
+        <img class="w-80 rounded-xl shadow" src="https://images.unsplash.com/photo-1524758631624-e2822e304c36">
+        <img class="w-80 rounded-xl shadow" src="https://images.unsplash.com/photo-1605902711622-cfb43c44367f">
+      </div>
+
+      <button onclick="slideWork(-1)" class="absolute left-0 top-1/2 bg-white p-3 shadow rounded-full">‹</button>
+      <button onclick="slideWork(1)" class="absolute right-0 top-1/2 bg-white p-3 shadow rounded-full">›</button>
+    </div>
+  </div>
+</section>
+
+<!-- ================= REVIEWS ================= -->
+<section id="reviews" class="py-24 bg-white reveal">
+  <div class="max-w-6xl mx-auto px-4 text-center">
+    <h2 class="text-3xl font-bold text-accent mb-12">Customer Reviews</h2>
+
+    <div class="relative overflow-hidden max-w-7xl mx-auto">
+      <div id="reviewSlider" class="flex transition-transform duration-700">
+
+        <div class="min-w-full bg-[#f9fafb] p-10 rounded-xl shadow">
+          ⭐⭐⭐⭐⭐<p class="mt-4">Excellent banner quality and timely delivery.</p><p class="mt-2 font-semibold">– Rahul Patil</p>
+        </div>
+
+        <div class="min-w-full bg-[#f9fafb] p-10 rounded-xl shadow">
+          ⭐⭐⭐⭐⭐<p class="mt-4">Very creative designs for social media.</p><p class="mt-2 font-semibold">– Sneha Deshmukh</p>
+        </div>
+
+        <div class="min-w-full bg-[#f9fafb] p-10 rounded-xl shadow">
+          ⭐⭐⭐⭐⭐<p class="mt-4">Affordable pricing and professional work.</p><p class="mt-2 font-semibold">– Amit Jadhav</p>
+        </div>
+
+        <div class="min-w-full bg-[#f9fafb] p-10 rounded-xl shadow">
+          ⭐⭐⭐⭐⭐<p class="mt-4">Best flex printing service in the area.</p><p class="mt-2 font-semibold">– Pooja Kulkarni</p>
+        </div>
+
+        <div class="min-w-full bg-[#f9fafb] p-10 rounded-xl shadow">
+          ⭐⭐⭐⭐⭐<p class="mt-4">On-time banner installation for our event.</p><p class="mt-2 font-semibold">– Sagar More</p>
+        </div>
+
+      </div>
+
+      <button onclick="slideReview(-1)" class="absolute left-0 top-1/2 bg-white p-3 shadow rounded-full">‹</button>
+      <button onclick="slideReview(1)" class="absolute right-0 top-1/2 bg-white p-3 shadow rounded-full">›</button>
+    </div>
+  </div>
+</section>
+
+<!-- ================= MAP ================= -->
+<section class="py-24 reveal">
+  <div class="max-w-7xl mx-auto px-4 text-center">
+    <h2 class="text-3xl font-bold text-accent mb-10">Visit Our Shop</h2>
+    <iframe
+      src="https://www.google.com/maps?q=Nirgudsir,%20Ambegaon,%20Pune&output=embed"
+      class="w-full h-96 rounded-2xl shadow">
+    </iframe>
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section id="contact" class="py-28 bg-gradient-to-br from-[#7209b7] to-[#4361ee] text-white reveal">
+  <div class="max-w-7xl mx-auto px-4 text-center">
+    <h2 class="text-3xl font-bold mb-6">Get in Touch</h2>
+    <p class="mb-8">Nirgudsir, Tal-Ambegaon, Pune</p>
+    <p>📞 9503438815 / 9370484425</p>
+    <p>✉ oshinde900@gmail.com</p>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="bg-black text-gray-400 pt-16">
+  <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-4 gap-10 pb-12">
+    <div>
+      <h3 class="text-white mb-3">Balaji Flex Printing</h3>
+      <p>Professional printing & creative design solutions.</p>
+    </div>
+
+    <div>
+      <h4 class="text-white mb-3">Quick Links</h4>
+      <ul class="space-y-2">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h4 class="text-white mb-3">Contact</h4>
+      <p>📞 9503438815</p>
+      <p>✉ oshinde900@gmail.com</p>
+    </div>
+
+    <div>
+      <h4 class="text-white mb-3">Follow Us</h4>
+      <div class="flex gap-4">
+        <a href="https://wa.me/919503438815">WhatsApp</a>
+        <a href="https://www.instagram.com/publicitybalaji/">Instagram</a>
+        <a href="#">Twitter</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="border-t border-gray-700 text-center py-4">
+    © 2026 Balaji Flex Printing & Design. All Rights Reserved.
+  </div>
+</footer>
+
+<!-- Floating WhatsApp -->
+<a href="https://wa.me/919503438815"
+   class="fixed bottom-5 right-5 bg-green-500 text-white px-5 py-3 rounded-full shadow-lg">
+  WhatsApp
+</a>
+
+<script>
+  // Mobile menu
+  menuBtn.onclick = () => mobileMenu.classList.toggle('hidden');
+
+  // Scroll reveal
+  const reveals = document.querySelectorAll('.reveal');
+  window.addEventListener('scroll', () => {
+    reveals.forEach(el => {
+      if (el.getBoundingClientRect().top < window.innerHeight - 100) {
+        el.classList.add('active');
+      }
+    });
+  });
+
+  // Active menu
+  const sections = document.querySelectorAll("section");
+  const navLinks = document.querySelectorAll(".nav-link");
+  window.addEventListener("scroll", () => {
+    let current = "";
+    sections.forEach(sec => {
+      if (scrollY >= sec.offsetTop - 120) current = sec.id;
+    });
+    navLinks.forEach(link => {
+      link.classList.remove("active");
+      if (link.getAttribute("href") === "#" + current) link.classList.add("active");
+    });
+  });
+
+  // Work slider
+  let workIndex = 0;
+  function slideWork(dir) {
+    const slider = document.getElementById('workSlider');
+    workIndex += dir;
+    slider.style.transform = `translateX(${-workIndex * 360}px)`;
+  }
+  setInterval(() => slideWork(1), 4000);
+
+  // Review slider
+  let reviewIndex = 0;
+  function slideReview(dir) {
+    const slider = document.getElementById('reviewSlider');
+    reviewIndex += dir;
+    if (reviewIndex < 0) reviewIndex = 4;
+    if (reviewIndex > 4) reviewIndex = 0;
+    slider.style.transform = `translateX(${-reviewIndex * 100}%)`;
+  }
+  setInterval(() => slideReview(1), 5000);
+</script>
+
+</body>
+</html>
